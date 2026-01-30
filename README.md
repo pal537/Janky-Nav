@@ -2,6 +2,8 @@
 
 一个基于 **React** \+ **Vite** \+ **Firebase** 的极简个人导航页。支持 **Google 登录** 和 **多端实时同步**。
 
+## **✨ 预览地址：[https://ce-nav.vercel.app](https://ce-nav.vercel.app)**
+
 <!-- 📷 预览图区域 Start -->
 
 <p align="center">
