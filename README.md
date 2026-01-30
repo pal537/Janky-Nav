@@ -57,7 +57,7 @@
 
 ### **3\. 部署到 Vercel**
 
-1. 在 [Vercel](https://vercel.com/) 导入你的 GitHub 仓库。  
+1. 在[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pal537/Janky-Nav)导入你的 GitHub 仓库。  
 2. 点击 **Deploy**，等待约 1 分钟，获得访问域名。
 
 ### **4\. 添加白名单 (关键一步！)**
