@@ -55,10 +55,16 @@
 2. 用上一步获取的 firebaseConfig 替换代码顶部Firebase 配置 部分配置。  
 3. 提交代码到 GitHub。
 
-### **3\. 部署到 Vercel**
+### 3. 部署到 Vercel
 
-1. 在[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pal537/Janky-Nav)导入你的 GitHub 仓库。  
-2. 点击 **Deploy**，等待约 1 分钟，获得访问域名。
+直接点击下方按钮一键部署：
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pal537/Janky-Nav)
+
+**部署步骤：**
+1. 点击上方按钮，跳转至 Vercel。
+2. 按照提示绑定你的 GitHub 账号。
+3. 点击 **Create** 或 **Deploy**，等待约 1 分钟，即可获得访问域名。
 
 ### **4\. 添加白名单 (关键一步！)**
 
