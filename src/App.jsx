@@ -36,7 +36,7 @@ import {
 } from "firebase/auth";
 
 /**
- * --- Firebase 配置 ---
+ * --- Firebase 配置(必须替换成你自己的) ---
  */
 const firebaseConfig = {
   apiKey: "AIzaSyBjDDFcKtNd-xNqPIFfPjInDRI3uMU9roU",

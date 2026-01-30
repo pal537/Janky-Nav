@@ -37,7 +37,7 @@
    * 点击左上角 **项目概览** 旁的 ⚙️ \-\> **常规**。  
    * 拉到网页底部-您的应用-在底部点击中间的  **\</>** 图标注册 Web 应用。  
     * 自行输入 **"应用别名"**-**"不要勾选同时为此应用设置 Firebase Hosting。"**-点击**"注册应用"**
-   * 复制生成的 const firebaseConfig \= { ... }; 代码块中以下部分数据
+   * 复制生成的 const firebaseConfig \= { ... }; 代码块中以下部分数据（拷贝下来，第三步要用）
    
 ```javascript
   const firebaseConfig = {
@@ -51,23 +51,31 @@
 };
 ```
 
-### **2\. 配置代码 (前端)**
 
-1. 打开项目中的 src/App.jsx。  
-2. 用上一步获取的 firebaseConfig 替换代码顶部Firebase 配置 部分配置。  
-3. 提交代码到 GitHub。
 
-### 3. 部署到 Vercel
+### **2. 部署到 Vercel (获取仓库)**
 
-直接点击下方按钮一键部署：
+**直接点击下方按钮一键克隆并部署：**
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pal537/Janky-Nav)
 
 **部署步骤：**
-1. 点击上方按钮，跳转至 Vercel。
-2. 按照提示绑定你的 GitHub 账号。
-3. 点击 **Create** 或 **Deploy**，等待约 1 分钟，即可获得访问域名。
+1. 点击按钮后，跳转至 Vercel，提示 **Create Git Repository**。
+2. 选择你的 GitHub 账号，点击 **Create**。
+3. 等待约 1 分钟，Vercel 会自动完成部署。
+   * *⚠️ 注意：此时网页打开可能是一片空白或报错，因为还没有填入配置，这是正常的！*
+4. 点击 **Continue to Dashboard**，然后点击 **View Repository** 进入你刚才生成的 GitHub 仓库。
 
+### **3. 配置代码 (前端)**
+
+1. 在 **你自己的 GitHub 仓库** 中，找到文件 `src/App.jsx`。
+2. 点击文件右上角的 ✏️ (Edit) 图标进入编辑模式。
+3. 找到代码顶部的 顶部`Firebase 配置`部分。
+4. 用 **第 1 步** 中获取的真实数据替换掉原本的空数据。
+5. 点击右上角 **Commit changes** 提交保存。
+   * *提交后，Vercel 会自动触发重新部署。等待 1 分钟后刷新你的网站，即可正常使用。*
+   
+   
 ### **4\. 添加白名单 (关键一步！)**
 
 1. 回到 Firebase 控制台 \-\> **Authentication** \-\> **设置 (Settings)**。  
