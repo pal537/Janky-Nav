@@ -36,8 +36,7 @@
    * 拉到网页底部-您的应用-在底部点击中间的  **\</>** 图标注册 Web 应用。  
     * 自行输入 **"应用别名"**-**"不要勾选同时为此应用设置 Firebase Hosting。"**-点击**"注册应用"**
    * 复制生成的 const firebaseConfig \= { ... }; 代码块中以下部分数据
-   
-
+   ```javascript
   const firebaseConfig = {
   apiKey: "xxxxxxxxxxx",
   authDomain: "xxxxxxxxxxx",
@@ -47,8 +46,7 @@
   appId: "1:xxxxxxxxxxx",
   measurementId: "xxxxxxxxxxx"
 };
-
-
+```
 
 ### **2\. 配置代码 (前端)**
 
@@ -71,14 +69,15 @@
 ## **🛡️ 安全设置 (推荐)**
 
 为了防止他人修改数据，建议在 Firebase 控制台 \-\> **Firestore Database** \-\> **规则 (Rules)** 中修改为：
-
-
+   ```javascript
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /{document=**} {
+      
       // 【读取权限】：所有人可见（包括没登录的路人）
       allow read: if true;
+      
       // 【写入权限】：只有你（在这个具体邮箱登录时）可以编辑
       // ⚠️请务必把下面的 "你的邮箱@gmail.com" 换成你真实的 Google 账号邮箱
       allow write: if request.auth.token.email == "你的邮箱@gmail.com";
@@ -86,8 +85,7 @@ service cloud.firestore {
     }
   }
 }
-
-
+```
 
 
 ## **🛠 本地开发**
