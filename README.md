@@ -36,7 +36,8 @@
    * 拉到网页底部-您的应用-在底部点击中间的  **\</>** 图标注册 Web 应用。  
     * 自行输入 **"应用别名"**-**"不要勾选同时为此应用设置 Firebase Hosting。"**-点击**"注册应用"**
    * 复制生成的 const firebaseConfig \= { ... }; 代码块中以下部分数据
-   ```javascript
+   
+```javascript
   const firebaseConfig = {
   apiKey: "xxxxxxxxxxx",
   authDomain: "xxxxxxxxxxx",
@@ -69,7 +70,7 @@
 ## **🛡️ 安全设置 (推荐)**
 
 为了防止他人修改数据，建议在 Firebase 控制台 \-\> **Firestore Database** \-\> **规则 (Rules)** 中修改为：
-   ```javascript
+```javascript
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
